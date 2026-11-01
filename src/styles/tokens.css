@@ -1,0 +1,67 @@
+/* The only file that may hold colour literals.
+   Provenance: every hex below was sampled from a real pixel of the supplied brand art.
+   Method: k-means (k=8) over opaque pixels of each file, centre snapped to the nearest real pixel;
+   the coordinate is x,y in the source file. Full report: tools/palette-report.json (made by tools/make-assets.py).
+   logo = brand/LOGO ORIONPAD PNG.png (2000x2000, RGBA, opaque)  banner = reference/SAMPUL ORIONPAD JPG (1500x500)
+   slide2 = reference/ORIONPAD 2 (1600x900) */
+:root {
+  --ink: #29262a;          /* logo @976,446 ring body */
+  --ember: #fe813c;        /* logo @1299,753 orange dot */
+  --cream: #f2e7da;        /* logo @1081,911 cream dots */
+  --paper: #ffffff;        /* logo @0,0 ground */
+  --ground: #faecdf;       /* banner @868,11 page wash */
+  --peach: #fce0cb;        /* banner @1128,0 */
+  --peach-2: #fbd2b6;      /* banner @1263,104 */
+  --lilac: #ecdeef;        /* banner @260,0 */
+  --ink-2: #433836;        /* banner @532,161 softer lettering */
+  --ember-hi: #f97e30;     /* banner @982,227 */
+  --clay: #dda78b;         /* banner @548,181 shadow tan */
+  --ember-deep: #de631d;   /* slide2 @1595,724 */
+  /* client-specified literal (own-token row accent); not sampled from art */
+  --color-mint: #00ffcc;
+
+  /* derived only through colour-mix of the tokens above */
+  --ink-3: color-mix(in srgb, var(--ink) 62%, var(--ground));
+  --line: color-mix(in srgb, var(--clay) 38%, transparent);
+  --line-2: color-mix(in srgb, var(--clay) 62%, transparent);
+  --surface: color-mix(in srgb, var(--paper) 62%, var(--ground));
+  --surface-2: color-mix(in srgb, var(--cream) 70%, var(--ground));
+  --shade: color-mix(in srgb, var(--clay) 46%, transparent);
+  --glare: color-mix(in srgb, var(--paper) 90%, transparent);
+  --ember-wash: color-mix(in srgb, var(--ember) 16%, transparent);
+  --ember-glow: color-mix(in srgb, var(--ember-deep) 42%, transparent);
+  --up-wash: color-mix(in srgb, var(--color-mint) 30%, var(--paper));
+  --down-wash: color-mix(in srgb, var(--ember-deep) 18%, var(--paper));
+  --scrim: color-mix(in srgb, var(--ink) 45%, transparent);
+  --own-rest: color-mix(in srgb, var(--color-mint) 2%, transparent);
+  --own-peak: color-mix(in srgb, var(--color-mint) 8%, transparent);
+
+  --clay-lg: 18px 18px 40px var(--shade), -14px -14px 30px var(--glare), inset 4px 4px 10px var(--glare), inset -6px -6px 14px var(--line);
+  --clay-md: 10px 10px 24px var(--shade), -8px -8px 18px var(--glare), inset 3px 3px 8px var(--glare), inset -4px -4px 10px var(--line);
+  --clay-sm: 6px 6px 14px var(--shade), -5px -5px 12px var(--glare), inset 2px 2px 5px var(--glare), inset -3px -3px 7px var(--line);
+  --clay-well: inset 4px 4px 10px var(--shade), inset -4px -4px 10px var(--glare);
+  --clay-btn: 0 10px 22px -8px var(--ember-glow), inset 0 3px 0 var(--glare), inset 0 -4px 0 var(--line-2);
+
+  /* type, measured off the reference: rounded heavy display, humanist body, mono for numerals */
+  --heavy: "Nunito", "Arial Rounded MT Bold", system-ui, sans-serif;
+  --body: "DM Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  /* geometry, measured off the reference */
+  --r-pill: 16px;
+  --r-card: 24px;
+  --r-panel: 32px;
+  --wrap: 1240px;
+  --gutter: 24px;
+  --touch: 44px;
+  --header-h: 72px;
+
+  /* motion, measured off the reference: ease-out expo-ish, spring overshoot, 80ms stagger */
+  --ease: cubic-bezier(.2, .8, .2, 1);
+  --ease-in: cubic-bezier(.4, 0, 1, 1);
+  --spring: cubic-bezier(.34, 1.56, .64, 1);
+  --t-fast: .12s;
+  --t-med: .35s;
+  --t-slow: .6s;
+  --stagger: 80ms;
+}

@@ -1,0 +1,45 @@
+{
+  "records": {
+    "ca": {
+      "label": "Contract",
+      "state": "absent",
+      "checked": "2026-11-01"
+    },
+    "x": {
+      "label": "X",
+      "state": "absent",
+      "checked": "2026-11-01"
+    },
+    "github": {
+      "label": "GitHub",
+      "state": "absent",
+      "checked": "2026-11-01"
+    },
+    "domain": {
+      "label": "Domain",
+      "state": "stated",
+      "value": "orionpad.app",
+      "source": "client statement",
+      "checked": "2026-11-01"
+    },
+    "chain": {
+      "label": "Robinhood Chain",
+      "state": "stated",
+      "chainId": 4663,
+      "chainIdHex": "0x1237",
+      "rpc": "https://rpc.mainnet.chain.robinhood.com",
+      "source": "client statement",
+      "scope": "batch-level",
+      "checked": "2026-11-01"
+    },
+    "market": {
+      "label": "Market source",
+      "state": "stated",
+      "provider": "GeckoTerminal",
+      "api": "https://api.geckoterminal.com/api/v2",
+      "networkSlug": "robinhood",
+      "source": "client statement",
+      "checked": "2026-11-01"
+    }
+  }
+}

@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OrionPad</title>
+<meta name="description" content="OrionPad pairs a launch desk for Robinhood Chain tokens alongside a live board of what is moving.">
+<meta name="theme-color" content="#faecdf">
+<meta property="og:title" content="OrionPad">
+<meta property="og:description" content="OrionPad pairs a launch desk for Robinhood Chain tokens alongside a live board of what is moving.">
+<meta property="og:image" content="brand/orionpad-banner.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="brand/orionpad-logo-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=IBM+Plex+Mono:wght@500;600&family=Nunito:wght@800;900&display=swap">
+<link rel="stylesheet" href="tokens.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-ca="{{CA_STATE}}">
+<a class="skip" href="#board">Skip ahead to board</a>
+<div class="progress" id="progress" aria-hidden="true"><i></i></div>
+
+<div class="topstack">
+  {{CA_BAR}}
+  <header class="head">
+    <div class="wrap head-in">
+      <a class="brand" href="#top" aria-label="OrionPad home">
+        <img class="brand-mark" src="brand/orionpad-logo.png" width="40" height="40" alt="">
+        <span class="brand-word">OrionPad</span>
+      </a>
+      <nav class="nav" aria-label="Sections">
+        <a href="#board">Board</a><a href="#origin">Origin</a><a href="#tokenomics">Tokenomics</a><a href="#roadmap">Roadmap</a>
+      </nav>
+      <div class="head-end">
+        <span class="pill" id="status" role="status"><i class="dot" aria-hidden="true"></i><span id="status-text">Connecting</span></span>
+        <div class="socials" aria-label="Social links">{{SOCIALS}}</div>
+      </div>
+    </div>
+  </header>
+</div>
+
+<div class="ticker" aria-label="Live movers">
+  <div class="ticker-track" id="ticker"><span class="tick tick--sk"></span><span class="tick tick--sk"></span><span class="tick tick--sk"></span><span class="tick tick--sk"></span><span class="tick tick--sk"></span><span class="tick tick--sk"></span></div>
+</div>
+
+<main id="top">
+  <section class="hero" aria-labelledby="h1">
+    <div class="mesh" aria-hidden="true"><i class="blob b1" data-depth="0.4"></i><i class="blob b2" data-depth="0.7"></i><i class="blob b3" data-depth="0.25"></i></div>
+    <div class="wrap hero-in">
+      <div class="hero-copy">
+        <p class="kicker" data-reveal>Built for Robinhood Chain</p>
+        <h1 id="h1" data-reveal>Every token starts somewhere. Keep the start in sight.</h1>
+        <p class="lede" data-reveal>OrionPad is a launch desk with a live board beside it. Put a token out, then watch the network react in the open, row by row.</p>
+        <div class="cta" data-reveal>
+          <a class="btn btn--primary" href="#board">Open the board</a>
+          {{HERO_CA_BTN}}
+        </div>
+        <ul class="chips" data-reveal>
+          <li class="chip">Network <b>Robinhood Chain</b></li>
+          <li class="chip">Chain ID <b class="mono">{{CHAIN_ID}}</b></li>
+          <li class="chip">Hex <b class="mono">{{CHAIN_HEX}}</b></li>
+        </ul>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orb o1" data-depth="1.1"></div>
+        <div class="orb o2" data-depth="0.8"></div>
+        <img class="hero-logo" data-depth="0.5" src="brand/orionpad-logo.png" width="460" height="460" alt="">
+        <div class="orb o3" data-depth="1.4"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap tiles" aria-label="Board at a glance">
+    <div class="tile spot" data-reveal><span class="tile-k">Pools on the board</span><b class="tile-v" id="t-count">&mdash;</b><span class="tile-s">fed live</span></div>
+    <div class="tile spot" data-reveal><span class="tile-k">Top mover</span><b class="tile-v" id="t-top">&mdash;</b><span class="tile-s" id="t-top-s">24h change</span></div>
+    <div class="tile spot" data-reveal><span class="tile-k">Board volume</span><b class="tile-v" id="t-vol">&mdash;</b><span class="tile-s">24h, summed</span></div>
+    <div class="tile spot" data-reveal><span class="tile-k">Chain ID</span><b class="tile-v mono">{{CHAIN_ID}}</b><span class="tile-s">as the team gave it</span></div>
+  </section>
+
+  <section class="wrap sect" aria-labelledby="pulse-h">
+    <header class="sect-head" data-reveal><p class="eyebrow">Pulse</p><h2 id="pulse-h">Four things worth a glance</h2><p class="sect-sub">Picked from whatever the feed is carrying right now.</p></header>
+    <div class="cards" id="pulse">
+      <article class="card spot" data-reveal><p class="card-k">Strongest day</p><h3 class="card-t" id="p1-t">&mdash;</h3><p class="card-v" id="p1-v">&mdash;</p></article>
+      <article class="card spot" data-reveal><p class="card-k">Most traded</p><h3 class="card-t" id="p2-t">&mdash;</h3><p class="card-v" id="p2-v">&mdash;</p></article>
+      <article class="card spot" data-reveal><p class="card-k">Deepest pool</p><h3 class="card-t" id="p3-t">&mdash;</h3><p class="card-v" id="p3-v">&mdash;</p></article>
+      <article class="card spot" data-reveal><p class="card-k">Busiest tape</p><h3 class="card-t" id="p4-t">&mdash;</h3><p class="card-v" id="p4-v">&mdash;</p></article>
+    </div>
+  </section>
+
+  <section class="wrap sect" id="board" aria-labelledby="board-h">
+    <header class="sect-head" data-reveal><p class="eyebrow">Board</p><h2 id="board-h">Movers across Robinhood Chain</h2><p class="sect-sub" id="board-note">Ten rows. Ours leads; the other nine are the busiest pools around.</p></header>
+    <div class="panel" data-reveal>
+      <div class="bar">
+        <div class="tabs" role="tablist" aria-label="Sort the board">
+          <button class="tab is-on" role="tab" aria-selected="true" data-sort="trending">Trending</button>
+          <button class="tab" role="tab" aria-selected="false" data-sort="gainers">Gainers</button>
+          <button class="tab" role="tab" aria-selected="false" data-sort="volume">Volume</button>
+          <button class="tab" role="tab" aria-selected="false" data-sort="liquidity">Liquidity</button>
+        </div>
+        <label class="search"><span class="sr">Filter the board</span><input id="q" type="search" placeholder="Filter by name or symbol" autocomplete="off" spellcheck="false"></label>
+      </div>
+      <div class="grid-head" role="presentation"><span>#</span><span>Token</span><span class="r">Price</span><span class="r">24h</span><span class="r hide-s">Volume</span><span class="r hide-s">Liquidity</span></div>
+      <div class="rows" id="rows" role="list" aria-live="off"></div>
+      <p class="board-foot" id="board-foot" hidden></p>
+    </div>
+  </section>
+
+  <section class="wrap sect" id="origin" aria-labelledby="origin-h">
+    <header class="sect-head" data-reveal><p class="eyebrow">Origin</p><h2 id="origin-h">Three beats, one trail</h2></header>
+    <div class="cards cards--3">
+      <article class="card spot" data-reveal><span class="step">01</span><h3 class="card-t">Name it</h3><p class="card-p">Settle which token ships and who answers for it. The details are written down once and stay put.</p></article>
+      <article class="card spot" data-reveal><span class="step">02</span><h3 class="card-t">Put it out</h3><p class="card-p">Send it out to Robinhood Chain and let the market meet it. Nobody sits in the middle.</p></article>
+      <article class="card spot" data-reveal><span class="step">03</span><h3 class="card-t">Follow it</h3><p class="card-p">The board above keeps score. Our token sits in the top slot, so its fortunes stay visible.</p></article>
+    </div>
+  </section>
+
+  <section class="wrap sect" id="tokenomics" aria-labelledby="tk-h">
+    <header class="sect-head" data-reveal><p class="eyebrow">Tokenomics</p><h2 id="tk-h">The numbers, once they exist</h2><p class="sect-sub">Nothing below is filled in until the team states it.</p></header>
+    <div class="cards cards--4">
+      <div class="tile spot" data-reveal><span class="tile-k">Supply</span><b class="tile-v tile-v--pend">pending</b></div>
+      <div class="tile spot" data-reveal><span class="tile-k">Allocation</span><b class="tile-v tile-v--pend">pending</b></div>
+      <div class="tile spot" data-reveal><span class="tile-k">Liquidity</span><b class="tile-v tile-v--pend">pending</b></div>
+      <div class="tile spot" data-reveal><span class="tile-k">Fees</span><b class="tile-v tile-v--pend">pending</b></div>
+    </div>
+    <div class="records" data-reveal>
+      <div class="record spot"><span class="record-k">Contract</span><span class="record-v">{{REC_CA}}</span></div>
+      <div class="record spot"><span class="record-k">X</span><span class="record-v">{{REC_X}}</span></div>
+      <div class="record spot"><span class="record-k">GitHub</span><span class="record-v">{{REC_GH}}</span></div>
+    </div>
+  </section>
+
+  <section class="wrap sect" id="roadmap" aria-labelledby="rm-h">
+    <header class="sect-head" data-reveal><p class="eyebrow">Roadmap</p><h2 id="rm-h">Four stops, in order</h2></header>
+    <ol class="road">
+      <li class="stop spot" data-reveal><span class="stop-n">I</span><div><h3 class="card-t">Foundation</h3><p class="card-p">Site, board and brand go public. The token slot stays reserved at the top.</p></div><span class="tag">pending</span></li>
+      <li class="stop spot" data-reveal><span class="stop-n">II</span><div><h3 class="card-t">Release</h3><p class="card-p">The OrionPad token is released and fills the pinned row.</p></div><span class="tag">pending</span></li>
+      <li class="stop spot" data-reveal><span class="stop-n">III</span><div><h3 class="card-t">Desk</h3><p class="card-p">The launch desk opens, so outside teams can release theirs.</p></div><span class="tag">pending</span></li>
+      <li class="stop spot" data-reveal><span class="stop-n">IV</span><div><h3 class="card-t">Reach</h3><p class="card-p">Wider tooling and partner hookups, informed by how the earlier stops went.</p></div><span class="tag">pending</span></li>
+    </ol>
+  </section>
+
+  <section class="wrap sect closer" aria-labelledby="end-h">
+    <div class="closer-in spot" data-reveal>
+      <h2 id="end-h">Hold a seat at the desk.</h2>
+      <p class="sect-sub">The board is live. Everything else opens as the team confirms it.</p>
+      <div class="cta"><a class="btn btn--primary" href="#board">Return to board</a></div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <a class="brand" href="#top" aria-label="OrionPad home"><img class="brand-mark" src="brand/orionpad-logo.png" width="40" height="40" alt=""><span class="brand-word">OrionPad</span></a>
+    <p class="foot-note">orionpad.app &middot; Robinhood Chain</p>
+    <p class="foot-note">Market data comes from GeckoTerminal. Nothing here is financial advice.</p>
+  </div>
+</footer>
+
+<div class="sr" id="live" aria-live="polite"></div>
+<script type="application/json" id="register">{{REGISTER_JSON}}</script>
+<script src="app.js"></script>
+</body>
+</html>

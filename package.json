@@ -1,0 +1,13 @@
+{
+  "name": "orionpad",
+  "version": "1.0.0",
+  "description": "OrionPad: launch desk and live board for Robinhood Chain",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "gates": "node scripts/gates.mjs",
+    "assets": "python -I tools/make-assets.py"
+  }
+}

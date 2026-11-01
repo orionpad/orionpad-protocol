@@ -1,0 +1,374 @@
+{
+ "files": {
+  "logoTransparent": {
+   "width": 2000,
+   "height": 2000,
+   "bitDepth": 8,
+   "colorType": 6,
+   "bytes": 437474,
+   "alphaHistogram": {
+    "0": 3455022,
+    "1-31": 5425,
+    "32-127": 5387,
+    "128-254": 12569,
+    "255": 521597
+   },
+   "transparentPixels": 3455022,
+   "pureBlackTransparent": 3455022,
+   "kmeans": [
+    {
+     "center": "#282527",
+     "share": 49.82,
+     "snapped": "#292528",
+     "x": 970,
+     "y": 445
+    },
+    {
+     "center": "#292528",
+     "share": 18.89,
+     "snapped": "#292629",
+     "x": 976,
+     "y": 445
+    },
+    {
+     "center": "#2a2629",
+     "share": 9.42,
+     "snapped": "#2a272a",
+     "x": 1020,
+     "y": 446
+    },
+    {
+     "center": "#fd7f3a",
+     "share": 7.95,
+     "snapped": "#fd803a",
+     "x": 1320,
+     "y": 749
+    },
+    {
+     "center": "#f2e7d8",
+     "share": 7.93,
+     "snapped": "#f2e7d8",
+     "x": 1046,
+     "y": 906
+    },
+    {
+     "center": "#fd813b",
+     "share": 5.39,
+     "snapped": "#fe813c",
+     "x": 1299,
+     "y": 757
+    },
+    {
+     "center": "#211c20",
+     "share": 0.44,
+     "snapped": "#211c20",
+     "x": 1012,
+     "y": 444
+    },
+    {
+     "center": "#160f15",
+     "share": 0.15,
+     "snapped": "#171015",
+     "x": 1218,
+     "y": 659
+    }
+   ]
+  },
+  "logoOpaque": {
+   "width": 2000,
+   "height": 2000,
+   "bitDepth": 8,
+   "colorType": 6,
+   "bytes": 305632,
+   "alphaHistogram": {
+    "0": 0,
+    "1-31": 0,
+    "32-127": 0,
+    "128-254": 0,
+    "255": 4000000
+   },
+   "transparentPixels": 0,
+   "pureBlackTransparent": 0,
+   "kmeans": [
+    {
+     "center": "#fefefe",
+     "share": 86.51,
+     "snapped": "#ffffff",
+     "x": 0,
+     "y": 0
+    },
+    {
+     "center": "#292629",
+     "share": 10.36,
+     "snapped": "#29262a",
+     "x": 976,
+     "y": 446
+    },
+    {
+     "center": "#fd813c",
+     "share": 1.77,
+     "snapped": "#fe813c",
+     "x": 1299,
+     "y": 753
+    },
+    {
+     "center": "#f1e6d9",
+     "share": 1.15,
+     "snapped": "#f2e7da",
+     "x": 1081,
+     "y": 911
+    },
+    {
+     "center": "#3e393c",
+     "share": 0.06,
+     "snapped": "#3f3a3d",
+     "x": 1498,
+     "y": 752
+    },
+    {
+     "center": "#c5bebc",
+     "share": 0.06,
+     "snapped": "#c4bbbe",
+     "x": 1143,
+     "y": 1537
+    },
+    {
+     "center": "#5c585b",
+     "share": 0.04,
+     "snapped": "#5d595b",
+     "x": 844,
+     "y": 1533
+    },
+    {
+     "center": "#888586",
+     "share": 0.04,
+     "snapped": "#898587",
+     "x": 1443,
+     "y": 663
+    }
+   ]
+  },
+  "banner": {
+   "size": [
+    1500,
+    500
+   ],
+   "kmeans": [
+    {
+     "center": "#faecde",
+     "share": 46.16,
+     "snapped": "#faecdf",
+     "x": 868,
+     "y": 11
+    },
+    {
+     "center": "#fbdeca",
+     "share": 22.73,
+     "snapped": "#fce0cb",
+     "x": 1128,
+     "y": 0
+    },
+    {
+     "center": "#fbd1b5",
+     "share": 13.1,
+     "snapped": "#fbd2b6",
+     "x": 1263,
+     "y": 104
+    },
+    {
+     "center": "#ebdeee",
+     "share": 9.86,
+     "snapped": "#ecdeef",
+     "x": 260,
+     "y": 0
+    },
+    {
+     "center": "#423836",
+     "share": 4.2,
+     "snapped": "#433836",
+     "x": 532,
+     "y": 161
+    },
+    {
+     "center": "#f87d30",
+     "share": 2.04,
+     "snapped": "#f97e30",
+     "x": 982,
+     "y": 227
+    },
+    {
+     "center": "#dba78b",
+     "share": 1.27,
+     "snapped": "#dda78b",
+     "x": 548,
+     "y": 181
+    },
+    {
+     "center": "#986f5c",
+     "share": 0.63,
+     "snapped": "#986f5d",
+     "x": 866,
+     "y": 259
+    }
+   ]
+  },
+  "slide2": {
+   "size": [
+    1600,
+    900
+   ],
+   "kmeans": [
+    {
+     "center": "#faeadf",
+     "share": 39.32,
+     "snapped": "#fbeae0",
+     "x": 1183,
+     "y": 23
+    },
+    {
+     "center": "#fcdbc1",
+     "share": 24.76,
+     "snapped": "#fddbc2",
+     "x": 1056,
+     "y": 0
+    },
+    {
+     "center": "#3a2f2e",
+     "share": 10.46,
+     "snapped": "#3b302e",
+     "x": 1307,
+     "y": 246
+    },
+    {
+     "center": "#f4a56c",
+     "share": 6.56,
+     "snapped": "#f5a66d",
+     "x": 1045,
+     "y": 788
+    },
+    {
+     "center": "#f5c099",
+     "share": 6.54,
+     "snapped": "#f5c19a",
+     "x": 1102,
+     "y": 415
+    },
+    {
+     "center": "#f9873a",
+     "share": 6.36,
+     "snapped": "#f9883a",
+     "x": 1474,
+     "y": 345
+    },
+    {
+     "center": "#60514d",
+     "share": 3.66,
+     "snapped": "#61524d",
+     "x": 176,
+     "y": 326
+    },
+    {
+     "center": "#de621b",
+     "share": 2.34,
+     "snapped": "#de631d",
+     "x": 1595,
+     "y": 724
+    }
+   ]
+  }
+ },
+ "colors": {
+  "ink": {
+   "hex": "#29262a",
+   "file": "LOGO ORIONPAD PNG.png",
+   "x": 976,
+   "y": 446
+  },
+  "ember": {
+   "hex": "#fe813c",
+   "file": "LOGO ORIONPAD PNG.png",
+   "x": 1299,
+   "y": 753
+  },
+  "cream": {
+   "hex": "#f2e7da",
+   "file": "LOGO ORIONPAD PNG.png",
+   "x": 1081,
+   "y": 911
+  },
+  "paper": {
+   "hex": "#ffffff",
+   "file": "LOGO ORIONPAD PNG.png",
+   "x": 0,
+   "y": 0
+  },
+  "ground": {
+   "hex": "#faecdf",
+   "file": "SAMPUL ORIONPAD JPG.jpg.jpeg",
+   "x": 868,
+   "y": 11
+  },
+  "peach": {
+   "hex": "#fce0cb",
+   "file": "SAMPUL ORIONPAD JPG.jpg.jpeg",
+   "x": 1128,
+   "y": 0
+  },
+  "peach-2": {
+   "hex": "#fbd2b6",
+   "file": "SAMPUL ORIONPAD JPG.jpg.jpeg",
+   "x": 1263,
+   "y": 104
+  },
+  "lilac": {
+   "hex": "#ecdeef",
+   "file": "SAMPUL ORIONPAD JPG.jpg.jpeg",
+   "x": 260,
+   "y": 0
+  },
+  "ink-2": {
+   "hex": "#433836",
+   "file": "SAMPUL ORIONPAD JPG.jpg.jpeg",
+   "x": 532,
+   "y": 161
+  },
+  "ember-hi": {
+   "hex": "#f97e30",
+   "file": "SAMPUL ORIONPAD JPG.jpg.jpeg",
+   "x": 982,
+   "y": 227
+  },
+  "clay": {
+   "hex": "#dda78b",
+   "file": "SAMPUL ORIONPAD JPG.jpg.jpeg",
+   "x": 548,
+   "y": 181
+  },
+  "ember-deep": {
+   "hex": "#de631d",
+   "file": "ORIONPAD 2.jpg.jpeg",
+   "x": 1595,
+   "y": 724
+  }
+ },
+ "logoCropBox": [
+  409,
+  408,
+  1594,
+  1593
+ ],
+ "faviconSource": {
+  "ringOuter": [
+   443,
+   1558,
+   444,
+   1557
+  ],
+  "hole": [
+   583,
+   1418,
+   595,
+   1406
+  ]
+ }
+}
